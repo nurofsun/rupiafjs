@@ -1,0 +1,17 @@
+{
+  "name": "rupiaf",
+  "version": "1.0.0",
+  "description": "\"Number to rupiah converter\"",
+  "main": "index.ts",
+  "scripts": {
+    "compile": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [
+    "[\"rupiah\"",
+    "\"currency\"",
+    "\"formatter\"]"
+  ],
+  "author": "Nurahmat",
+  "license": "ISC"
+}

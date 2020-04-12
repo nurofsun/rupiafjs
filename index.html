@@ -19,6 +19,11 @@
             <input id="nominal" type="text" name="nominal" placeholder="Nominal" autocomplete="off">
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="dist/scripts/index.js"></script>
+    <script>
+        document.querySelector("#nominal").addEventListener("keyup", (event) => {
+            event.target.value = new Rupiaf(event.target.value).convert()
+        });
+    </script>
 </body>
 </html>

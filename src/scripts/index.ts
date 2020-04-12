@@ -1,17 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
-    function toRupiah(angka) {
-        let chars = angka.toString(),
-            start = 0,
-            step = 3,
-            separator = ".",
-            result = '';
+class Rupiaf {
+    public angka: any;
+
+    constructor(angka: any) {
+        this.angka = angka
+    }
+    convert() {
+        let chars: any = this.angka.toString(),
+            start: number = 0,
+            step: number = 3,
+            separator: string = ".",
+            result: string = '';
         if (chars.length != 0)  {
             chars = chars.replace(/\./g,'');
-            let sisa = chars.length % step;
-            let repeater = chars.length / step;
+            let sisa: number = chars.length % step;
+            let repeater: number = chars.length / step;
             chars = chars.split("");
             if (sisa == 0) {
-                for (let i=0; i < repeater; i++) {
+                for (let i: number =0; i < repeater; i++) {
                     chars.splice(chars.length - (step + i), 0, ".");
                     step += 3;
                 }
@@ -28,8 +33,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         return chars;
     }
-    document.getElementById("nominal").addEventListener('keyup', function() {
-        event.target.value = toRupiah(event.target.value);
-    });
-});
-
+}
