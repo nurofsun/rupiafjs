@@ -2,8 +2,9 @@ class Rupiaf {
     public angka: any;
 
     constructor(angka: any) {
-        this.angka = angka
+        this.angka = angka;
     }
+
     convert() {
         let chars: any = this.angka.toString(),
             start: number = 0,
