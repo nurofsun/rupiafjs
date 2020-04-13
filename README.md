@@ -1,6 +1,8 @@
 # Rupiaf.js
 
-Rupiaf is a dead simple converter number to rupiah format. written with Vanilla Javascript, no dependencies.
+Rupiaf is a dead simple converter number to rupiah format. written with TypeScript and transform it to vanilla JS, no dependencies.
+
+![Demo Rupiaf](./Rupiaf-test.gif)
 
 ## Usage
 
