@@ -2,7 +2,7 @@
 
 Rupiaf is a dead simple converter number to rupiah format. written with TypeScript and transform it to vanilla JS, no dependencies.
 
-<p align="center">![Demo Rupiaf](./Rupiaf-test.gif)</p>
+<p align="center"><img src="./Rupiaf-test.gif" alt="Rupiaf.js convert any number to rupiah."></p>
 
 ## Usage
 
