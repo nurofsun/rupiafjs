@@ -1,7 +1,7 @@
 # Rupiaf.js
 
 <p>
-        <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nurofsun/Rupiaf.js">
+        <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/nurofsun/Rupiaf.js/dist/scripts/rupiaf.js">
         <img alt="GitHub" src="https://img.shields.io/github/license/nurofsun/Rupiaf.js">
         <img alt="GitHub stars" src="https://img.shields.io/github/stars/nurofsun/Rupiaf.js?style=social">
         <img alt="GitHub issues" src="https://img.shields.io/github/issues/nurofsun/Rupiaf.js">
