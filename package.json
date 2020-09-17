@@ -1,8 +1,7 @@
 {
   "name": "rupiaf",
   "version": "1.0.0",
-  "description": "\"Number to rupiah converter\"",
-  "main": "index.ts",
+  "description": "Lightweight rupiah currency converter.",
   "scripts": {
     "serve": "live-server --no-browser --port=5050",
     "compile": "tsc --watch",
