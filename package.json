@@ -1,5 +1,5 @@
 {
-  "name": "rupiaf",
+  "name": "rupiaf.js",
   "version": "1.0.0",
   "description": "Lightweight rupiah currency converter.",
   "scripts": {
