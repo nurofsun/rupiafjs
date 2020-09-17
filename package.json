@@ -4,6 +4,7 @@
   "description": "\"Number to rupiah converter\"",
   "main": "index.ts",
   "scripts": {
+    "serve": "live-server --no-browser --port=5050",
     "compile": "tsc --watch",
     "build": "tsc"
   },

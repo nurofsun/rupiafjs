@@ -10,16 +10,27 @@
 <body>
     <main id="app">
         <div class="container">
-            <div class="nominal-input">
-                <label class="label" for="nominal">Rp.</label>
-                <input id="nominal" type="text" name="nominal" placeholder="Nominal" autocomplete="off">
-            </div>
+                <form method="get" action="#" id="nominalForm">
+                        <label class="label" for="nominal">Rp.</label>
+                        <input id="nominal" type="text" name="nominal" placeholder="Nominal" autocomplete="off">
+                </form>
         </div>
     </main>
-    <script src="dist/scripts/index.js"></script>
+    <script src="dist/scripts/rupiaf.js"></script>
     <script>
-        document.querySelector("#nominal").addEventListener("keyup", (event) => {
-            event.target.value = new Rupiaf(event.target.value).convert()
+        document.addEventListener('DOMContentLoaded', function() {
+                var nominalInput = document.querySelector('#nominal');
+                var nominalForm = document.querySelector('#nominalForm');
+                nominalInput.addEventListener('keyup', function(event) {
+                        var rupiaf = new Rupiaf(event.target.value);
+
+                        event.target.value = rupiaf.convert()
+                })
+                nominalForm.addEventListener('submit', function() {
+                        var rupiaf = new Rupiaf(nominalInput.value)
+                        nominalInput.value = rupiaf.clean()
+                })
+                
         });
     </script>
 </body>
