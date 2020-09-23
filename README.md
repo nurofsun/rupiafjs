@@ -19,8 +19,38 @@ Rupiaf is a dead simple converter number to rupiah format. written with TypeScri
 **Note:** demo above use my own css to styling input element, it's excluded from this library.
 
 ### Build Tool (Webpack)
+Let's take a look to this simple HTML.
 
-Coming soon.
+`index.html`
+```html
+ ...
+ <div id="app">
+   <form action="/" method="GET" id="nominalForm">
+     <input type="text" id="nominalInput" name="nominal">
+   </form>
+ </div>
+ <script src="assets/js/app.bundle.js"></script>
+ ...
+```
+
+Load js version of this library, because by default it written with typescript, if you're not working with typescript, just import `rupiaf.common.js` as follow.
+
+`app.js`
+```js
+import Rupiaf from '../../node_modules/rupiaf.js/dist/scripts/rupiaf.common.js'
+
+const nominalInput = document.querySelector('#nominalInput'),
+    nominalForm = document.querySelector('#nominalForm');
+
+nominalInput.addEventListener('keyup', function(event) {
+    event.target.value = new Rupiaf(event.target.value).convert()
+})
+
+// working with form input that store the nominal/currency to database.
+nominalForm.addEventListener('submit', function(event) {
+    nominalInput.value = new Rupiaf(nominalInput.value).clean()
+})
+```
 
 ### Add To Your HTML Page
 
