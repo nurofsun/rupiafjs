@@ -1,4 +1,4 @@
-export default class Rupiaf {
+class Rupiaf {
     constructor(number) {
         this.number = number;
     }
