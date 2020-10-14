@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <title>Format Rupiah</title>
-    <script src="dist/js/rupiaf.js"></script>
+    <script src="dist/js/rupiaf.min.js"></script>
 </head>
 <body>
     <main id="app">
@@ -20,7 +20,6 @@
         document.addEventListener('DOMContentLoaded', function() {
                 const nominalInput = document.querySelector('#nominal');
                 const nominalForm = document.querySelector('#nominalForm');
-                let rupiah = new Rupiaf(nominalInput.value);
                 nominalInput.addEventListener('keyup', function(event) {
                   event.target.value = new Rupiaf(event.target.value).convert();
                 });

@@ -2,7 +2,9 @@
   "name": "@nurofsun/rupiaf.js",
   "version": "1.0.0",
   "description": "Lightweight rupiah currency converter.",
+  "module": "src/js/rupiaf.amd.js",
   "scripts": {
+    "build": "babel -d dist/js --out-file-extension .min.js src/js/rupiaf.js",
     "serve": "live-server --no-browser --port=5050"
   },
   "keywords": [
@@ -13,11 +15,10 @@
   "author": "Nurahmat",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "babel-preset-minify": "^0.5.1"
   },
-  "dependencies": {
-    "@babel/cli": "^7.11.6"
-  }
+  "dependencies": {}
 }
