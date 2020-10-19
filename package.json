@@ -1,5 +1,5 @@
 {
-  "name": "@nurofsun/rupiafjs",
+  "name": "rupiafjs",
   "version": "1.0.0",
   "description": "Lightweight rupiah currency converter.",
   "module": "src/js/rupiaf.amd.js",
