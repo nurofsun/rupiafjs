@@ -1,4 +1,4 @@
-# Rupiaf.js
+# rupiafjs
 
 <p>
 <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/nurofsun/rupiafjs/dist/scripts/rupiaf.min.js">
