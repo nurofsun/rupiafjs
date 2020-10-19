@@ -1,10 +1,10 @@
 # Rupiaf.js
 
 <p>
-        <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/nurofsun/rupiafjs/dist/scripts/rupiaf.min.js">
-        <img alt="GitHub" src="https://img.shields.io/github/license/nurofsun/rupiafjs">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/nurofsun/rupiafjs?style=social">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/nurofsun/rupiafjs">
+<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/nurofsun/rupiafjs/dist/scripts/rupiaf.min.js">
+<img alt="GitHub" src="https://img.shields.io/github/license/nurofsun/rupiafjs">
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/nurofsun/rupiafjs?style=social">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/nurofsun/rupiafjs">
 </p>
 
 Rupiaf is a dead simple converter number to rupiah format. written with TypeScript and transform it to vanilla JS, no dependencies.
