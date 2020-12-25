@@ -18,7 +18,7 @@ Rupiaf is a dead simple converter number to rupiah format. written with TypeScri
 
 **Note:** demo above use my own css to styling input element, it's excluded from this library.
 
-### Build Tool (Webpack)
+### Webpack
 Let's take a look to this simple HTML.
 
 `index.html`
@@ -37,7 +37,7 @@ Load js version of this library, because by default it written with typescript, 
 
 `app.js`
 ```js
-import Rupiaf from '../../node_modules/rupiaf.js/dist/scripts/rupiaf.common.js'
+import Rupiaf from 'rupiafjs';
 
 const nominalInput = document.querySelector('#nominalInput'),
     nominalForm = document.querySelector('#nominalForm');
@@ -82,6 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 var rupiaf = new Rupiaf(nominalInput.value)
                 nominalInput.value = rupiaf.clean()
         })
-        
+
 });
 ```
